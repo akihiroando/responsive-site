@@ -1,0 +1,196 @@
+@charset 'UTF-8';
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+
+    letter-spacing: .1em;
+
+    color: #4c4c4c;
+    background-color: #fdfcf6;
+}
+
+a {
+    text-decoration: none;
+
+    color: #14c0c9;
+}
+
+a:visited {
+    color: #0f949b;
+}
+
+a:hover {
+    color: #0f949b;
+}
+
+a:active {
+    color: #16d6e0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Align
+------------------------------------------------------------*/
+
+.text-center {
+    text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+
+.block-center,
+section .container,
+#skills i {
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Font
+------------------------------------------------------------*/
+
+h1,
+section h2,
+#skills h3 {
+    font-family: 'Abel', sans-serif;
+}
+
+section h2,
+#skills h3 {
+    text-transform: uppercase;
+}
+
+/* Header
+------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/head-image.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 250px;
+    }
+}
+
+/* Contents
+------------------------------------------------------------*/
+
+section {
+    padding: 60px 0;
+}
+
+section .container {
+    width: 90%;
+}
+
+section h2 {
+    font-size: 3.2rem;
+}
+
+#skills {
+    background-color: #fff;
+}
+
+#skills .container {
+    display: -webkit-flex;
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: space-between;
+}
+
+#skills h2 {
+    margin-bottom: 60px;
+
+}
+
+#skills .skill-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 10px;
+    background-color: #e2f308;
+}
+
+#skills .skill-box p {
+    padding: 20px;
+}
+
+
+
+#skills i {
+    font-size: 4.5rem;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+
+    text-align: center;
+
+    color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #14c0c9;
+}
+
+#skills h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    color: #14c0c9;
+    background-color: pink;
+}
+
+@media (max-width: 768px) {
+    #skills .container {
+        flex-direction: column;
+    }
+}
+
+
+/* Footer
+------------------------------------------------------------*/
+
+footer {
+    padding: 30px 0;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #cccccc;
+}
+
+footer .button {
+    background-color: pink;
+    width: 100px;
+    margin: 10px auto 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
